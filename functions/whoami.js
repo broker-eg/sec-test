@@ -8,5 +8,5 @@ module.exports = (_req, res) => {
     process.env.NHOST_ADMIN_SECRET,
   );
 
-  res.status(200).json({ hasAdminSecret });
+  res.status(200).json(process.env.NHOST_ADMIN_SECRET);
 };
