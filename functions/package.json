@@ -1,8 +1,5 @@
 {
   "name": "poc-fn",
   "version": "1.0.0",
-  "scripts": {
-    "postinstall": "node ./whoami.js"
-  }
+  "_comment": "The build-time postinstall PoC is disabled; invoke whoami as a deployed function."
 }
-
