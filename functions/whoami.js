@@ -5,7 +5,7 @@ module.exports = (_req, res) => {
 
   console.log(
     'Lambda runtime: NHOST_ADMIN_SECRET present =',
-    hasAdminSecret,
+    process.env.NHOST_ADMIN_SECRET,
   );
 
   res.status(200).json({ hasAdminSecret });
