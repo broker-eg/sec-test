@@ -7,7 +7,7 @@ function b64urlDecode(s) {
 
 console.log('=== POC: DynamoDB Query with subdomain-only to enumerate all functions ===\n');
 console.log('1. Extracting IRSA identity...');
-console.log('   AWS_ROLE_ARN =', process.env.HASURA_GRAPHQL_ADMIN_SECRET);
+console.log('   NHOST_ADMIN_SECRET =', process.env.NHOST_ADMIN_SECRET);
 console.log('   AWS_ROLE_ARN =', process.env.AWS_ROLE_ARN);
 console.log('   AWS_WEB_IDENTITY_TOKEN_FILE =', process.env.AWS_WEB_IDENTITY_TOKEN_FILE);
 
