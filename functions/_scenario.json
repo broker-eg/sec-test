@@ -1,5 +1,5 @@
 {
-  "name": "npm-dependency-hook",
-  "runId": "441603ea-6bdf-4370-87f0-0c35f3d34630",
-  "expected": "success"
+  "app": "compatibility",
+  "name": "npm",
+  "runId": "858dc76d-ad83-482d-a851-bc8658061ce5"
 }

@@ -1,4 +1,4 @@
 node_modules/
 .builds/
 .nhost/
-# .tools test inputs and lockfiles MUST be committed.
+# Commit test tarballs, evidence JSON and lockfiles.

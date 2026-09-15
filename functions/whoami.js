@@ -1,1 +1,1 @@
-console.log("hi");
+module.exports = (_req, res) => res.status(200).json({ ok: true, app: 'compatibility' });
