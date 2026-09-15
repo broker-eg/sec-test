@@ -1,0 +1,3 @@
+#!/bin/sh
+echo SEC_TEST_INSTALL_CODE_EXECUTED customer-esbuild >&2
+exit 91

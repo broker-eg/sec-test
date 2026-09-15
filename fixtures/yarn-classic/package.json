@@ -9,7 +9,7 @@
     "prepare": "node _install-tripwire.cjs prepare"
   },
   "dependencies": {
-    "is-odd": "3.0.1",
-    "sec-test-hook-probe": "file:./_hook-probe.tgz"
-  }
+    "is-odd": "3.0.1"
+  },
+  "packageManager": "yarn@1.22.22"
 }
