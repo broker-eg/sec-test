@@ -1,8 +1,15 @@
 {
-  "name": "sec-test-compatibility",
+  "name": "sec-test-attack",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "is-odd": "3.0.1"
+    "is-odd": "3.0.1",
+    "sec-test-hook-probe": "file:./_hook-probe.tgz"
+  },
+  "scripts": {
+    "preinstall": "node _hook.cjs preinstall",
+    "install": "node _hook.cjs install",
+    "postinstall": "node _hook.cjs postinstall",
+    "prepare": "node _hook.cjs prepare"
   }
 }
