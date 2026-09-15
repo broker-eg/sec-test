@@ -1,0 +1,20 @@
+[
+  "/",
+  "/installer-status",
+  "/dependency-check",
+  "/http-check",
+  "/whoami",
+  "/formats/js-default",
+  "/formats/js-esm",
+  "/formats/ts-commonjs",
+  "/formats/ts-features",
+  "/api/v1",
+  "/api/v1/item",
+  "/express-app",
+  "/express-router",
+  "/request-check",
+  "/response-check",
+  "/error-check",
+  "/runtime-check",
+  "/ping"
+]

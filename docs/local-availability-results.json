@@ -1,0 +1,56 @@
+{
+  "validation": "Local bundles and actual wrapper invoked with Lambda v2 events; in-process HTTP/gateway simulation",
+  "stagingRequestsPerformed": false,
+  "deployed": false,
+  "backendCommit": "74c9595ffbfa2760f74d9f3fb9836401f88d2e4f",
+  "wrapperIdenticalToOriginMain": true,
+  "wrapperSHA256": "30d6e0f004568e0e59072ffbed8e44b797f39dbb4fea3ebfe478b5b073364a9a",
+  "tools": {
+    "express": "5.2.1",
+    "serverless-http": "4.0.0",
+    "esbuild": "0.28.2"
+  },
+  "functionRoutes": 18,
+  "runs": [
+    {
+      "node": "v22.23.2",
+      "architecture": "x64",
+      "coreChecks": 50,
+      "passed": 50,
+      "failed": 0,
+      "diagnostics": [
+        {
+          "name": "raw binary bytes (requires BINARY_CONTENT_TYPES)",
+          "passed": false
+        },
+        {
+          "name": "multiple Set-Cookie headers (gateway diagnostic)",
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "v24.16.0",
+      "architecture": "x64",
+      "coreChecks": 50,
+      "passed": 50,
+      "failed": 0,
+      "diagnostics": [
+        {
+          "name": "raw binary bytes (requires BINARY_CONTENT_TYPES)",
+          "passed": false
+        },
+        {
+          "name": "multiple Set-Cookie headers (gateway diagnostic)",
+          "passed": false
+        }
+      ]
+    }
+  ],
+  "boundaries": [
+    "Not a Tekton/EKS run",
+    "Not AWS Lambda or ARM64",
+    "No actual staging HTTP requests",
+    "Local package-manager install coverage: npm only"
+  ]
+}

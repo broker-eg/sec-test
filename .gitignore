@@ -2,3 +2,4 @@ node_modules/
 .builds/
 .nhost/
 # Commit test tarballs, evidence JSON and lockfiles.
+reports/
