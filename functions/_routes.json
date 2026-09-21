@@ -1,0 +1,13 @@
+[
+  { "path": "app-info" },
+  { "path": "deps-check" },
+  { "path": "echo-json", "method": "POST", "body": { "message": "hello", "n": 3 },
+    "expect": { "method": "POST", "body.message": "hello" } },
+  { "path": "api/v2/nested", "expect": { "kind": "nested-route" } },
+  { "path": "express-api/v1/users/42", "expect": { "kind": "express-router", "userId": "42" } },
+  { "path": "express-api/v1/validate", "method": "POST", "body": { "x": 1 },
+    "expect": { "kind": "express-validate" } },
+  { "path": "express-api/whatever", "expect": { "kind": "express-fallback", "middlewareRan": true } },
+  { "path": "whoami", "legacy": true },
+  { "path": "ping", "legacy": true }
+]
